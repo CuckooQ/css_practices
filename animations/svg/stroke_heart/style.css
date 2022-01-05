@@ -14,14 +14,14 @@ body {
   align-items: center;
 }
 
-/* STROKE STAR */
-.star__wrapper {
+/* STROKE HEART */
+.heart__wrapper {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.star__wrapper .star {
+.heart__wrapper .heart {
   position: absolute;
   left: 0;
   right: 0;
@@ -31,15 +31,15 @@ body {
   stroke: #d94d16;
   stroke-width: 0.5rem;
   stroke-linecap: round;
-  animation-duration: 4s;
-  animation-name: star;
+  animation-duration: 3s;
+  animation-name: heart;
   animation-iteration-count: infinite;
 }
 
-@keyframes star {
+@keyframes heart {
   from {
-    stroke-dashoffset: 83rem;
-    stroke-dasharray: 83rem;
+    stroke-dasharray: 67rem;
+    stroke-dashoffset: 67rem;
   }
 
   to {
