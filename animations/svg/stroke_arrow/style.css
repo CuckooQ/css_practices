@@ -14,32 +14,31 @@ body {
   align-items: center;
 }
 
-/* STROKE STAR */
-.star__wrapper {
+/* STROKE ARROW */
+.arrow__wrapper {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.star__wrapper .star {
+.arrow__wrapper .arrow {
   position: absolute;
   left: 0;
   right: 0;
   margin: auto;
-  width: 100%;
-  height: 4rem;
+  height: 5rem;
   stroke: #d94d16;
   stroke-width: 0.5rem;
   stroke-linecap: round;
-  animation-duration: 4s;
-  animation-name: star;
+  animation-duration: 2s;
+  animation-name: arrow;
   animation-iteration-count: infinite;
 }
 
-@keyframes star {
+@keyframes arrow {
   from {
-    stroke-dashoffset: 83rem;
-    stroke-dasharray: 83rem;
+    stroke-dashoffset: 40rem;
+    stroke-dasharray: 40rem;
   }
 
   to {
