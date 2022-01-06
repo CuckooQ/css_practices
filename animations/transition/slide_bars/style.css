@@ -55,14 +55,14 @@ button {
 }
 
 .transition.active > .bar {
-  animation-name: fill-bar;
+  animation-name: slide-in;
 }
 
 .transition.inactive > .bar {
-  animation-name: clear-bar;
+  animation-name: slide-out;
 }
 
-@keyframes fill-bar {
+@keyframes slide-in {
   0% {
     transform: scaleX(0);
   }
@@ -72,7 +72,7 @@ button {
   }
 }
 
-@keyframes clear-bar {
+@keyframes slide-out {
   0% {
     transform: scaleX(1);
   }
