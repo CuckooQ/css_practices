@@ -1,0 +1,42 @@
+/* COMMON */
+html {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.note {
+  position: fixed;
+  bottom: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* STROKE CIRCLE */
+.circle__wrapper {
+  position: relative;
+  width: 100%;
+  height: 1000vh;
+}
+
+.circle__wrapper .circle {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  stroke: #d94d16;
+  stroke-width: 5px;
+  stroke-dashoffset: 180;
+  stroke-dasharray: 180;
+  stroke-linecap: round;
+  transition: stroke 0.3s linear;
+}
