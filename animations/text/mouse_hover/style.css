@@ -1,0 +1,53 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2f2f2f;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+span.filling {
+  cursor: pointer;
+  -webkit-text-stroke: 1px #f9f7f1;
+  background-image: linear-gradient(0deg, #f9f7f1, #f9f7f1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease-in;
+}
+
+span.filling.left {
+  background-position: left;
+  background-size: 0% 100%;
+}
+
+span.filling.right {
+  background-position: right;
+  background-size: 0% 100%;
+}
+
+span.filling.top {
+  background-position: top;
+  background-size: 100% 0%;
+}
+
+span.filling.bottom {
+  background-position: bottom;
+  background-size: 100% 0%;
+}
+
+span.filling.center {
+  background-position: center;
+  background-size: 0% 0%;
+}
+
+span.filling:hover {
+  background-size: 100% 100%;
+}
