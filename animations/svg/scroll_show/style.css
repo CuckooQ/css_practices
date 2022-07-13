@@ -1,0 +1,26 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+}
+
+footer {
+  height: 30vh;
+  background-color: #000;
+}
+
+.section1 {
+  padding-top: 20vh;
+  background-color: #000;
+}
+
+.path {
+  fill: none;
+  stroke-width: 3px;
+}
+.path_normal {
+  stroke: #fff;
+}
+.path_reverse {
+  stroke: #000;
+}
