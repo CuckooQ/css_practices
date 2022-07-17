@@ -1,0 +1,45 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0f0f0f;
+}
+
+h1 {
+  position: relative;
+  font-size: 5rem;
+  color: #f1f1f1;
+  transform: skew(var(--skew));
+}
+h1::before, h1::after {
+  content: attr(data-text);
+  position: absolute;
+  width: 100%;
+  background-color: #0f0f0f;
+  transition: clip-path 50ms ease-in;
+
+}
+h1::before {
+  left: 5px;
+  text-shadow: 2px -2px #2a96d4;
+  clip-path: polygon(
+    0 var(--topBefore), 
+    100% var(--topBefore),
+    100% var(--bottomBefore),
+    0 var(--bottomBefore) 
+  );
+}
+h1::after {
+  right: 5px;
+  text-shadow: -2px 2px #cc2a1f;
+  clip-path: polygon(
+    0 var(--topAfter), 
+    100% var(--topAfter),
+    100% var(--bottomAfter),
+    0 var(--bottomAfter) 
+  );
+}
